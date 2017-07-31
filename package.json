@@ -1,14 +1,14 @@
 {
-  "name": "alienworld-web",
+  "name": "test-project-1",
   "version": "1.0.0",
-  "description": "Charles' personal website on Heroku. All the contect is written by Charles using front-end skills",  
+  "description": "",
   "engines": {
     "node": "6.11.1"
   },
   "main": "application.js",
   "dependencies": {
     "angular-ui-router": "0.3.2",
-    "express" : "4.13.3"
+    "express": "4.13.3"
   },
   "devDependencies": {
     "browser-sync": "2.18.2",
@@ -23,7 +23,7 @@
     "run-sequence": "1.2.2"
   },
   "scripts": {
-    "start" : "node server.js"
+    "start": "node server.js"
   },
   "author": "Charles SHU",
   "license": "MIT"
