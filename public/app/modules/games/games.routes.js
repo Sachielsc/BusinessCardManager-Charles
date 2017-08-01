@@ -6,7 +6,7 @@ angular.module('games').config(['$stateProvider', function($stateProvider) {
 	$stateProvider
 	.state('games', {
 		url:'/games',
-		// controller:'type controller name here',
+		controller:'gamesController',
 		templateUrl:'app/modules/games/views/alienworld-games.view.html',
 	});
 	}
