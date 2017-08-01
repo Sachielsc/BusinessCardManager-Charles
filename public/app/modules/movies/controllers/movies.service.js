@@ -3,7 +3,7 @@ angular.module('contactlist').service('ProductService', ['$log','$http', functio
 	this.getSpecifyProduct = function(pid){
 		var specifyProductDetail = $http({
 			method:'GET',
-			url: 'http://jsonplaceholder.typicode.com/users',
+			url: '//jsonplaceholder.typicode.com/users',
 		});
 		return specifyProductDetail;
 	}
