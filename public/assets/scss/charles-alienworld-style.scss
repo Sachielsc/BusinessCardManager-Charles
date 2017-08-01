@@ -154,6 +154,18 @@ body {
 	outline: none;
 	box-sizing: border-box;
 
+	a {
+		color: #0275d8 !important;
+		-webkit-transition: all 1s ease !important;
+		   -moz-transition: all 1s ease !important;
+		    -ms-transition: all 1s ease !important;
+			 -o-transition: all 1s ease !important;
+				transition: all 1s ease !important;
+		&:hover {
+			color: #97ff77 !important;
+		}
+	}
+
 	span {
     	color: #5bc0de;
 	}
@@ -192,9 +204,7 @@ body {
 
 	h1, h2, h3, h4, h5, h6, p, footer {
     color: rgba(255, 255, 255, 0.6);
-    font-family: Inconsolata;
     letter-spacing: 1px;
-	text-transform: uppercase;
 	}
 
 	&.bg-lab {
@@ -289,10 +299,6 @@ body {
 .aw-movie, .aw-game, .aw-community {
 	h1, h2, h3, h4, h5, h6, p, li, dt, dd {
 		color: #98a6ad;
-	}
-
-	a {
-		color: #97ff77;
 	}
 
 	footer {
@@ -444,10 +450,6 @@ body {
 		padding: 15px 15px 15px 15px;
 	    -webkit-font-smoothing: antialiased;
 	    text-shadow: 1px 1px 1px rgba(0,0,0,.004);
-	}
-
-	a {
-		color: inherit;
 	}
 
 	h1, h2, h3, h4, h5, h6, p, li {
@@ -932,4 +934,17 @@ body {
 .hidethis {
 	display:none;
 	// visibility:hidden; (not as good as display:none)
+}
+
+.namecard-up {
+	background-color: blue;
+	text: white;
+	padding: 95px 15px 15px 15px;
+}
+
+.namecard-down {
+	background-color: black;
+	text: white;
+	padding: 15px 15px 15px 15px;
+
 }

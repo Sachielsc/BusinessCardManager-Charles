@@ -118,6 +118,15 @@ body {
   background-color: #323b44;
   outline: none;
   box-sizing: border-box; }
+  .intro a, .aw-game a, .aw-movie a, .meeting a, .aw-community a, .assignment a, .card-box a {
+    color: #0275d8 !important;
+    -webkit-transition: all 1s ease !important;
+    -moz-transition: all 1s ease !important;
+    -ms-transition: all 1s ease !important;
+    -o-transition: all 1s ease !important;
+    transition: all 1s ease !important; }
+    .intro a:hover, .aw-game a:hover, .aw-movie a:hover, .meeting a:hover, .aw-community a:hover, .assignment a:hover, .card-box a:hover {
+      color: #97ff77 !important; }
   .intro span, .aw-game span, .aw-movie span, .meeting span, .aw-community span, .assignment span, .card-box span {
     color: #5bc0de; }
 
@@ -145,9 +154,7 @@ body {
     text-align: right; }
   .intro h1, .intro h2, .intro h3, .intro h4, .intro h5, .intro h6, .intro p, .intro footer {
     color: rgba(255, 255, 255, 0.6);
-    font-family: Inconsolata;
-    letter-spacing: 1px;
-    text-transform: uppercase; }
+    letter-spacing: 1px; }
   .intro.bg-lab span {
     color: #5bc0de; }
 
@@ -212,9 +219,6 @@ body {
 
 .aw-movie h1, .aw-movie h2, .aw-movie h3, .aw-movie h4, .aw-movie h5, .aw-movie h6, .aw-movie p, .aw-movie li, .aw-movie dt, .aw-movie dd, .aw-game h1, .aw-game h2, .aw-game h3, .aw-game h4, .aw-game h5, .aw-game h6, .aw-game p, .aw-game li, .aw-game dt, .aw-game dd, .aw-community h1, .aw-community h2, .aw-community h3, .aw-community h4, .aw-community h5, .aw-community h6, .aw-community p, .aw-community li, .aw-community dt, .aw-community dd {
   color: #98a6ad; }
-
-.aw-movie a, .aw-game a, .aw-community a {
-  color: #97ff77; }
 
 .aw-movie footer, .aw-game footer, .aw-community footer {
   text-align: right;
@@ -332,8 +336,6 @@ body {
     padding: 15px 15px 15px 15px;
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
-  .cv-fullpage a {
-    color: inherit; }
   .cv-fullpage h1, .cv-fullpage h2, .cv-fullpage h3, .cv-fullpage h4, .cv-fullpage h5, .cv-fullpage h6, .cv-fullpage p, .cv-fullpage li {
     color: #98a6ad; }
   .cv-fullpage .list-unstyled i {
@@ -701,3 +703,13 @@ body {
 
 .hidethis {
   display: none; }
+
+.namecard-up {
+  background-color: blue;
+  text: white;
+  padding: 95px 15px 15px 15px; }
+
+.namecard-down {
+  background-color: black;
+  text: white;
+  padding: 15px 15px 15px 15px; }

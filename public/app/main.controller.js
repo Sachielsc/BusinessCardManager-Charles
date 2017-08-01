@@ -1,6 +1,6 @@
 'use strict';
 
-var mainModule = angular.module('alienworld',['ui.router', 'ngAnimate', 'home', 'movies', 'games', 'community', 'about', 'report']);
+var mainModule = angular.module('contactlist',['ui.router', 'ngAnimate', 'home', 'movies', 'games', 'community']);
 
 mainModule.controller('MainController', ['$scope','$log', function($scope,$log){
 	function init(){
@@ -9,7 +9,7 @@ mainModule.controller('MainController', ['$scope','$log', function($scope,$log){
 		$scope.currentdate.month = $scope.currentdate.getMonth() + 1;
 		$scope.currentdate.day = $scope.currentdate.getDate();
 		$scope.currentdate.date = $scope.currentdate.day + "/" + $scope.currentdate.month + "/" + $scope.currentdate.year;
-		$log.debug('date initialization complete...');
+		$log.debug('data initialization complete...');
 			}
 	init();
 	}
