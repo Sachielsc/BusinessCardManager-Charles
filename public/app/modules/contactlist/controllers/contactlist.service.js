@@ -1,4 +1,4 @@
-angular.module('businesscard').service('ProductService', ['$log','$http', function($log,$http){
+angular.module('businesscard').service('BusinessCardService', ['$log','$http', function($log,$http){
 
 	this.getSpecifyProduct = function(pid){
 		var specifyProductDetail = $http({

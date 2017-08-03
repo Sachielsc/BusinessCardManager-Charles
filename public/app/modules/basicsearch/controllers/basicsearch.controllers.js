@@ -1,13 +1,13 @@
 'use strict';
-angular.module('basicsearch').controller('basicsearchController', ['$log', '$scope', '$http', 'ProductService', function($log, $scope, $http, ProductService){
+angular.module('basicsearch').controller('basicsearchController', ['$log', '$scope', '$http', 'BusinessCardService', function($log, $scope, $http, BusinessCardService){
 
     $scope.hideResult = true;
 
     $scope.searchPerson = function () {
         $scope.hideResult = true;
         var searchIndex = 0;
-        ProductService.getSpecifyProduct().then(function(response){
-            for (searchIndex = 0; searchIndex < 10; searchIndex++) {
+        BusinessCardService.getSpecifyProduct().then(function(response){
+            for (searchIndex = 0; searchIndex < response.data.length; searchIndex++) {
                 $log.debug(searchIndex);
                 if ( $scope.searchName.toLowerCase() == response.data[searchIndex].name.toLowerCase()) {
                     $scope.displayname = response.data[searchIndex].name;
