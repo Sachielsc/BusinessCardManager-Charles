@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('contactlist').config(['$stateProvider', function($stateProvider) {
-	console.log('movie routers loading complete...');
+	console.log('contactlist routers loading complete...');
 
 	$stateProvider
 	.state('contactlist', {
