@@ -5,7 +5,6 @@ var gulpIf = require('gulp-if');
 var uglify = require('gulp-uglify');
 var cssnano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
-var del = require('del');
 var runSequence = require('run-sequence');
 
 
@@ -57,12 +56,6 @@ gulp.task('watch', ['sass'], function (){
 	//gulp.watch(['public/app/**/*.html','public/app/**/*.js'], ['html']); 
 	//gulp.watch(['public/index.html'], ['index']); 
 });
-
-
-
-gulp.task('clean:dist', function() {
-  return del.sync('dist');
-})
 
 gulp.task('build', function (callback){
   runSequence(['clean:dist','sass', 'useref', 'views','images','fonts'],
