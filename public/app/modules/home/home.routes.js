@@ -8,7 +8,7 @@ angular.module('home').config(['$stateProvider',
 		.state('home',{
 			url:'/',
 			controller:'homeController',
-			templateUrl:'app/modules/home/views/alienworld-home.view.html',
+			templateUrl:'app/modules/home/views/home.view.html',
 		});
 	}
 ])

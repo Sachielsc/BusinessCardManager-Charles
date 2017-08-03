@@ -1,5 +1,5 @@
 'use strict';
-angular.module('games').controller('gamesController', ['$log', '$scope', '$http', 'ProductService', function($log, $scope, $http, ProductService){
+angular.module('basicsearch').controller('basicsearchController', ['$log', '$scope', '$http', 'ProductService', function($log, $scope, $http, ProductService){
 
 		$scope.hideResult = true;
 

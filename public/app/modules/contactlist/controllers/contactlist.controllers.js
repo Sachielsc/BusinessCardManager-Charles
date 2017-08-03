@@ -1,5 +1,5 @@
 'use strict';
-angular.module('movies').controller('movieController', ['$log', '$scope', '$http', 'ProductService', function($log, $scope, $http, ProductService){
+angular.module('contactlist').controller('contactlistController', ['$log', '$scope', '$http', 'ProductService', function($log, $scope, $http, ProductService){
 
 	var toggleNumber = 1;
 	$scope.listItems = [];

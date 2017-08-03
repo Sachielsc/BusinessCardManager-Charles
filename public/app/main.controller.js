@@ -1,6 +1,6 @@
 'use strict';
 
-var mainModule = angular.module('contactlist',['ui.router', 'ngAnimate', 'home', 'movies', 'games', 'community']);
+var mainModule = angular.module('businesscard',['ui.router', 'ngAnimate', 'home', 'contactlist', 'basicsearch', 'adminreport']);
 
 mainModule.controller('MainController', ['$scope','$log', function($scope,$log){
 	function init(){

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="contactlist">
+<html ng-app="businesscard">
     <head>
         <title>Charles' contact list app</title>
         <meta name="description" content="" />
@@ -9,7 +9,7 @@
 
         <!-- Stylesheet -->
         <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/charles-alienworld-style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/charles-business-card-style.css">
         <link rel="stylesheet" type="text/css" href="assets/lib/font-awesome-4.7.0/css/font-awesome.min.css">
     </head>
 
@@ -23,9 +23,9 @@
 
                 <nav class="aw-nav" ng-init="navDisplayToggle = false" ng-show="navDisplayToggle">
                     <ul class="row nav aw-nav-bar">
-                        <li class="col-4" ui-sref-active="active"><a ui-sref="movies" class="hover-white">contact list</a></li>
-                        <li class="col-4" ui-sref-active="active"><a ui-sref="games" class="hover-white">basic search</a></li>
-                        <li class="col-4" ui-sref-active="active"><a ui-sref="community" class="hover-white">admin</a></li>
+                        <li class="col-4" ui-sref-active="active"><a ui-sref="contactlist" class="hover-white">contact list</a></li>
+                        <li class="col-4" ui-sref-active="active"><a ui-sref="basicsearch" class="hover-white">basic search</a></li>
+                        <li class="col-4" ui-sref-active="active"><a ui-sref="adminreport" class="hover-white">admin</a></li>
                     </ul>
                 </nav>
             </header>
@@ -52,22 +52,22 @@
         <script src="app/main.controller.js"></script>
 
         <!-- modules -->
-        <script src="app/modules/community/community.module.js"></script>
-        <script src="app/modules/movies/movies.module.js"></script>
-        <script src="app/modules/games/games.module.js"></script>
+        <script src="app/modules/adminreport/adminreport.module.js"></script>
+        <script src="app/modules/contactlist/contactlist.module.js"></script>
+        <script src="app/modules/basicsearch/basicsearch.module.js"></script>
         <script src="app/modules/home/home.module.js"></script>
 
         <!-- stateprovider -->
-        <script src="app/modules/community/community.routes.js"></script>
-        <script src="app/modules/movies/movies.routes.js"></script>
-        <script src="app/modules/games/games.routes.js"></script>
+        <script src="app/modules/adminreport/adminreport.routes.js"></script>
+        <script src="app/modules/contactlist/contactlist.routes.js"></script>
+        <script src="app/modules/basicsearch/basicsearch.routes.js"></script>
         <script src="app/modules/home/home.routes.js"></script>
 
         <!-- other controller & service -->
         <script src="app/modules/home/controllers/home.controllers.js"></script>
-        <script src="app/modules/movies/controllers/movies.controllers.js"></script>
-        <script src="app/modules/games/controllers/games.controllers.js"></script>
-        <script src="app/modules/community/controllers/community.controllers.js"></script>
-        <script src="app/modules/movies/controllers/movies.service.js"></script>
+        <script src="app/modules/contactlist/controllers/contactlist.controllers.js"></script>
+        <script src="app/modules/basicsearch/controllers/basicsearch.controllers.js"></script>
+        <script src="app/modules/adminreport/controllers/adminreport.controllers.js"></script>
+        <script src="app/modules/contactlist/controllers/contactlist.service.js"></script>
     </body>
 </html>
