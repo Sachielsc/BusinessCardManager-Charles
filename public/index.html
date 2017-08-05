@@ -17,16 +17,19 @@
         <div data-ng-controller="MainController">
             <div id="preloader"></div>
             <header class="aw-header container">
-                <div class="app-title">The business card management tool</div>
+                <div class="app-title">
+                    <a ui-sref="home" title="Home Page" class="title-text">Charles' Business Card Management Tool</a>
+                </div>
                 <div class="app-button">
-                    <button title="Menu" ng-click="navDisplayToggle = !navDisplayToggle">Click me to expand the menu</button>
+                    <button title="Menu" ng-click="navDisplayToggle = !navDisplayToggle">Click me to expand / hide the menu</button>
                 </div>
 
                 <nav class="aw-nav" ng-init="navDisplayToggle = false" ng-show="navDisplayToggle">
                     <ul class="row nav aw-nav-bar">
-                        <li class="col-4" ui-sref-active="active"><a ui-sref="contactlist" class="hover-white">contact list</a></li>
-                        <li class="col-4" ui-sref-active="active"><a ui-sref="basicsearch" class="hover-white">basic search</a></li>
-                        <li class="col-4" ui-sref-active="active"><a ui-sref="adminreport" class="hover-white">admin</a></li>
+                        <li class="col-3" ui-sref-active="active"><a ui-sref="contactlist" class="hover-white">contact list</a></li>
+                        <li class="col-3" ui-sref-active="active"><a ui-sref="basicsearch" class="hover-white">basic search</a></li>
+                        <li class="col-3" ui-sref-active="active"><a ui-sref="adminreport" class="hover-white">admin</a></li>
+                        <li class="col-3" ui-sref-active="active"><a href="https://charles-alienworld.herokuapp.com/about/statepanel" target="_blank">about author</a></li>
                     </ul>
                 </nav>
             </header>
