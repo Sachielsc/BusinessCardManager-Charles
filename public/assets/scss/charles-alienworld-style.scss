@@ -158,7 +158,9 @@ nav.aw-nav, div.aw-contact {
 
 body {
     color: #98a6ad;
-    background-color: #2b333b;
+    // background-color: #2b333b;
+    background-image: url("../images/businesscards.jpg");
+    background-size: 100%;
     z-index: 900;
 }
 
@@ -176,6 +178,7 @@ body {
     background-clip: padding-box;
     margin: 20px 10px 20px 10px;
     background-color: #323b44;
+    background:rgba(#2B333B,0.8);
     outline: none;
     box-sizing: border-box;
 
