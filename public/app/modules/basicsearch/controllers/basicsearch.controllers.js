@@ -8,7 +8,6 @@ angular.module('basicsearch').controller('basicsearchController', ['$log', '$sco
         var searchIndex = 0;
         BusinessCardService.getSpecifyProduct().then(function(response){
             for (searchIndex = 0; searchIndex < response.data.length; searchIndex++) {
-                $log.debug(searchIndex);
                 if ( $scope.searchName.toLowerCase() == response.data[searchIndex].name.toLowerCase()) {
                     $scope.displayname = response.data[searchIndex].name;
                     $scope.displayphone = response.data[searchIndex].phone;

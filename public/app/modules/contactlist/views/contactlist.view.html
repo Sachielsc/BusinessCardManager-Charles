@@ -3,8 +3,9 @@
     	<div class="aw-movie white-frame shadow-expand">
     		<p>Choose one name from the following list and the card will be shown below:</p>
     		<ol>
-    			<li ng-repeat="listName in listItems">
-    				<a ng-click="chooseItem($index)">{{listName}}</a>
+    			<li ng-repeat="listName in listItems track by listName">
+                    <!-- <a ng-click="chooseItemByIndex($index)">{{listName}}</a> -->
+                    <a ng-click="chooseItemByName(listName)">{{listName}}</a>                    
     			</li>
     		</ol>
             <footer><i>Info source:<br>http://jsonplaceholder.typicode.com/users</i></footer>
