@@ -5,7 +5,8 @@ $aw-vedio-width: 640px;
 $aw-vedio-height: 360px;
 $aw-buttonpanel-height: 230px;
 $aw-buttonpanel-width: 220px;
-
+$mobile-device: 480px;
+$medium-device: 960px;
 
 
 .aw-header {
@@ -27,22 +28,36 @@ $aw-buttonpanel-width: 220px;
         .title-text {
             text-decoration: none;
             color: #97ff77;
-            font-size: 300%;
             font-variant: small-caps;
             white-space: nowrap;
             z-index: 1010;
+
+            @media screen and (min-width: $mobile-device) {
+                font-size: 140%;
                 -webkit-transition: all 1.5s ease;
                    -moz-transition: all 1.5s ease;
                     -ms-transition: all 1.5s ease;
                      -o-transition: all 1.5s ease;
                         transition: all 1.5s ease;  
-            &:hover {
-                color: white;
+                &:hover {
+                    color: white;
+                }
             }
+
+            @media screen and (min-width: $medium-device) {
+                font-size: 300%;
+                -webkit-transition: all 1.5s ease;
+                   -moz-transition: all 1.5s ease;
+                    -ms-transition: all 1.5s ease;
+                     -o-transition: all 1.5s ease;
+                        transition: all 1.5s ease;  
+                &:hover {
+                    color: white;
+                }
+            }
+
         }
     }
-
-
 
     .aw-header-content {
         height: $aw-header-height;
@@ -133,14 +148,21 @@ nav.aw-nav, div.aw-contact {
     a {
         position:absolute;
         left:50%;
-        transform: translateX(-50%);
+        transform: translateX(-67%);
         color: #97ff77;
         transition: all 0.8s ease;
         white-space: nowrap;
         text-decoration: none;
-        font-variant: small-caps;
+
+        @media screen and (min-width: $mobile-device) {
+            font-variant: small-caps;
+            transform: translateX(-50%);
+        }
+
         &:hover {
-            font-size: 200%;
+            @media screen and (min-width: $mobile-device) {
+                font-size: 200%;
+            }
             -webkit-transition: all 0.8s ease;
                -moz-transition: all 0.8s ease;
                 -ms-transition: all 0.8s ease;
@@ -173,8 +195,8 @@ body {
     padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.07);
     -webkit-border-radius: 5px;
-    border-radius: 5px;
     -moz-border-radius: 5px;
+    border-radius: 5px;
     background-clip: padding-box;
     margin: 20px 10px 20px 10px;
     background-color: #323b44;
@@ -889,12 +911,14 @@ body {
 }
 
 .namecard-up {
+    border-radius: 15px 15px 0px 0px;
     background-color: rgb(0, 150, 200);
     text: white;
     padding: 95px 15px 15px 15px;
 }
 
 .namecard-down {
+    border-radius: 0px 0px 15px 15px;
     background-color: black;
     text: white;
     padding: 15px 15px 15px 15px;

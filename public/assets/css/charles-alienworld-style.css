@@ -15,17 +15,29 @@
     .aw-header .app-title .title-text, .aw-header .app-button .title-text {
       text-decoration: none;
       color: #97ff77;
-      font-size: 300%;
       font-variant: small-caps;
       white-space: nowrap;
-      z-index: 1010;
-      -webkit-transition: all 1.5s ease;
-      -moz-transition: all 1.5s ease;
-      -ms-transition: all 1.5s ease;
-      -o-transition: all 1.5s ease;
-      transition: all 1.5s ease; }
-      .aw-header .app-title .title-text:hover, .aw-header .app-button .title-text:hover {
-        color: white; }
+      z-index: 1010; }
+      @media screen and (min-width: 480px) {
+        .aw-header .app-title .title-text, .aw-header .app-button .title-text {
+          font-size: 140%;
+          -webkit-transition: all 1.5s ease;
+          -moz-transition: all 1.5s ease;
+          -ms-transition: all 1.5s ease;
+          -o-transition: all 1.5s ease;
+          transition: all 1.5s ease; }
+          .aw-header .app-title .title-text:hover, .aw-header .app-button .title-text:hover {
+            color: white; } }
+      @media screen and (min-width: 960px) {
+        .aw-header .app-title .title-text, .aw-header .app-button .title-text {
+          font-size: 300%;
+          -webkit-transition: all 1.5s ease;
+          -moz-transition: all 1.5s ease;
+          -ms-transition: all 1.5s ease;
+          -o-transition: all 1.5s ease;
+          transition: all 1.5s ease; }
+          .aw-header .app-title .title-text:hover, .aw-header .app-button .title-text:hover {
+            color: white; } }
   .aw-header .aw-header-content {
     height: 160px;
     width: 100%;
@@ -98,14 +110,16 @@ nav.aw-nav, div.aw-contact {
   nav.aw-nav a, div.aw-contact a {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-67%);
     color: #97ff77;
     transition: all 0.8s ease;
     white-space: nowrap;
-    text-decoration: none;
-    font-variant: small-caps; }
+    text-decoration: none; }
+    @media screen and (min-width: 480px) {
+      nav.aw-nav a, div.aw-contact a {
+        font-variant: small-caps;
+        transform: translateX(-50%); } }
     nav.aw-nav a:hover, div.aw-contact a:hover {
-      font-size: 200%;
       -webkit-transition: all 0.8s ease;
       -moz-transition: all 0.8s ease;
       -ms-transition: all 0.8s ease;
@@ -115,6 +129,9 @@ nav.aw-nav, div.aw-contact {
       top: 50%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%); }
+      @media screen and (min-width: 480px) {
+        nav.aw-nav a:hover, div.aw-contact a:hover {
+          font-size: 200%; } }
 
 body {
   color: #98a6ad;
@@ -130,8 +147,8 @@ body {
   padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.07);
   -webkit-border-radius: 5px;
-  border-radius: 5px;
   -moz-border-radius: 5px;
+  border-radius: 5px;
   background-clip: padding-box;
   margin: 20px 10px 20px 10px;
   background-color: #323b44;
@@ -653,11 +670,13 @@ body {
   display: none; }
 
 .namecard-up {
+  border-radius: 15px 15px 0px 0px;
   background-color: #0096c8;
   text: white;
   padding: 95px 15px 15px 15px; }
 
 .namecard-down {
+  border-radius: 0px 0px 15px 15px;
   background-color: black;
   text: white;
   padding: 15px 15px 15px 15px; }
