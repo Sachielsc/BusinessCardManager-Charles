@@ -9,14 +9,21 @@
         </div>
         <div class="aw-game white-frame shadow-expand" ng-hide="hideResult">
             <p>The search result is:</p>
-            <div class="namecard-up">
-                <footer>{{displayname}}</footer>
-                <footer>Web Designer</footer>
+            <div class="sc-frame-outer">
+                <div class="sc-frame-middle">
+                    <div class="sc-frame-inner">
+                        <div class="namecard-up">
+                            <footer>{{displayname}}</footer>
+                            <footer>Web Designer</footer>
+                        </div>
+                        <div class="namecard-down">
+                            <footer>{{displayphone}} | {{displayemail}}</footer>
+                            <footer>{{displayaddress}}</footer>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="namecard-down">
-                <footer>{{displayphone}} | {{displayemail}}</footer>
-                <footer>{{displayaddress}}</footer>
-            </div>
+
         </div>
     </div>
 </body>
